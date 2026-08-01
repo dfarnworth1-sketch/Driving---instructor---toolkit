@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Driving Instructor Toolkit</title>
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --accent:#dc2626;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family:Arial, Helvetica, sans-serif;
+      background:linear-gradient(180deg,#0f172a,#1e293b);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+    .wrap{
+      width:min(720px,100%);
+      background:var(--card);
+      border-radius:24px;
+      padding:32px;
+      box-shadow:0 18px 50px rgba(0,0,0,.35);
+    }
+    h1{
+      margin:0 0 8px;
+      font-size:clamp(30px,6vw,52px);
+      line-height:1.05;
+      color:var(--text);
+    }
+    p{
+      margin:0 0 28px;
+      color:var(--muted);
+      font-size:clamp(18px,3.5vw,24px);
+      line-height:1.4;
+    }
+    a.button{
+      display:block;
+      width:100%;
+      text-decoration:none;
+      background:var(--accent);
+      color:white;
+      font-weight:700;
+      text-align:center;
+      padding:22px 18px;
+      border-radius:16px;
+      font-size:clamp(22px,4.5vw,32px);
+      box-shadow:0 8px 18px rgba(220,38,38,.28);
+    }
+    a.button:active{transform:scale(.99)}
+    .note{
+      margin-top:22px;
+      font-size:16px;
+      color:#64748b;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Driving Instructor Toolkit</h1>
+    <p>Quick teaching videos for use during lessons.</p>
+    <a class="button"
+       href="https://www.youtube.com/watch?v=lqo0_StXf4M"
+       target="_blank"
+       rel="noopener">
+       ▶ Clutch diaphragm animation
+    </a>
+    <div class="note">Tap the button to open the video.</div>
+  </main>
+</body>
+</html>
