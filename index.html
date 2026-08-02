@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Driving Instructor Toolkit</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>ADI Toolkit</title>
 
   <style>
     * {
@@ -12,28 +18,29 @@
 
     body {
       margin: 0;
-      padding: 20px;
+      padding: 18px;
       font-family: Arial, sans-serif;
       background: #0f172a;
       color: #0f172a;
     }
 
     .container {
-      max-width: 850px;
+      width: 100%;
+      max-width: 1000px;
       margin: auto;
     }
 
     header {
       background: white;
-      padding: 24px;
+      padding: 25px;
       border-radius: 22px;
       margin-bottom: 18px;
       text-align: center;
     }
 
-    h1 {
+    header h1 {
       margin: 0 0 8px;
-      font-size: 40px;
+      font-size: 42px;
     }
 
     header p {
@@ -42,100 +49,536 @@
       font-size: 18px;
     }
 
-    section {
-      background: white;
-      padding: 22px;
-      border-radius: 22px;
-      margin-bottom: 18px;
-    }
-
-    h2 {
-      margin-top: 0;
-      font-size: 28px;
-    }
-
-    .grid {
+    .main-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 14px;
+      grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
     }
 
-    .button {
+    .category {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .category h2 {
+      margin: 0 0 15px;
+      font-size: 25px;
+    }
+
+    .topic-grid {
+      display: grid;
+      gap: 11px;
+    }
+
+    .topic-button {
       display: block;
-      padding: 18px;
-      border-radius: 14px;
-      text-decoration: none;
-      text-align: center;
-      font-size: 20px;
-      font-weight: bold;
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 13px;
       background: #2563eb;
       color: white;
+      text-decoration: none;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
     }
 
-    .button:hover {
+    .topic-button:hover {
       background: #1d4ed8;
     }
 
-    .not-ready {
-      padding: 18px;
-      border-radius: 14px;
+    .instructor {
+      background: #7c3aed;
+    }
+
+    .instructor:hover {
+      background: #6d28d9;
+    }
+
+    #message-box {
+      display: none;
+      position: fixed;
+      inset: 0;
+      padding: 20px;
+      background: rgba(15, 23, 42, 0.88);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .message-card {
+      width: 100%;
+      max-width: 430px;
+      padding: 25px;
+      border-radius: 20px;
+      background: white;
       text-align: center;
-      font-size: 20px;
-      font-weight: bold;
-      background: #e2e8f0;
+    }
+
+    .message-card h2 {
+      margin-top: 0;
+    }
+
+    .message-card p {
       color: #64748b;
+      font-size: 18px;
+      line-height: 1.45;
+    }
+
+    .close-button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      background: #2563eb;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 18px;
+      padding: 18px;
+      border-radius: 18px;
+      background: white;
+      color: #64748b;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 12px;
+      }
+
+      header h1 {
+        font-size: 34px;
+      }
+
+      .main-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <div class="container">
 
     <header>
-      <h1>Driving Instructor Toolkit</h1>
-      <p>Teaching videos and resources for use during lessons.</p>
+      <h1>ADI Toolkit</h1>
+
+      <p>
+        Teaching videos and resources for use during lessons.
+      </p>
     </header>
 
-    <section>
-      <h2>🚗 Vehicle Controls</h2>
-      <div class="grid">
-        <a class="button" href="clutch.html">Clutch</a>
-        <a class="button" href="gears.html">Gears</a>
-       <a class="button" href="steering.html">Steering</a>
-        <a class="button" href="brake.html">brake</a>
-      </div>
-    </section>
 
-    <section>
-      <h2>🚦 Road Skills</h2>
-      <div class="grid">
-        <div class="not-ready">Junctions</div>
-        <div class="not-ready">Roundabouts</div>
-        <div class="not-ready">Dual Carriageways</div>
-        <div class="not-ready">Country Lanes</div>
-        <div class="not-ready">Meeting and Overtaking</div>
-        <div class="not-ready">Pedestrian Crossings</div>
-      </div>
-    </section>
+    <main class="main-grid">
 
-    <section>
-      <h2>🅿️ Manoeuvres</h2>
-      <div class="grid">
-        <div class="not-ready">Parallel Parking</div>
-        <div class="not-ready">Bay Parking</div>
-        <div class="not-ready">Pull Up on the Right</div>
-      </div>
-    </section>
+      <!-- VEHICLE CONTROLS -->
 
-    <section>
-      <h2>📋 Test Preparation</h2>
-      <div class="grid">
-        <div class="not-ready">Show Me, Tell Me</div>
-        <div class="not-ready">Independent Driving</div>
-        <div class="not-ready">Mock Test</div>
-      </div>
-    </section>
+      <section class="category">
+
+        <h2>🚗 Vehicle Controls</h2>
+
+        <div class="topic-grid">
+
+          <a
+            class="topic-button"
+            href="clutch.html"
+          >
+            Clutch
+          </a>
+
+          <a
+            class="topic-button"
+            href="gears.html"
+          >
+            Gears
+          </a>
+
+          <a
+            class="topic-button"
+            href="steering.html"
+          >
+            Steering
+          </a>
+
+          <a
+            class="topic-button"
+            href="brakes.html"
+          >
+            Brakes
+          </a>
+
+          <button
+            class="topic-button"
+            onclick="notReady('Positioning')"
+          >
+            Positioning
+          </button>
+
+        </div>
+      </section>
+
+
+      <!-- BASIC DRIVING -->
+
+      <section class="category">
+
+        <h2>🚙 Basic Driving</h2>
+
+        <div class="topic-grid">
+
+          <button
+            class="topic-button"
+            onclick="notReady('Moving Off and Stopping')"
+          >
+            Moving Off and Stopping
+          </button>
+
+          <button
+            class="topic-button"
+            onclick="notReady('Mirrors')"
+          >
+            Mirrors
+          </button>
+
+          <button
+            class="topic-button"
+            onclick="notReady('Signals')"
+          >
+            Signals
+          </button>
+
+          <button
+            class="topic-button"
+            onclick="notReady('Observation')"
+          >
+            Observation
+          </button>
+
+          <button
+            class="topic-button"
+            onclick="notReady('Speed and Planning')"
+          >
+            Speed and Planning
+          </button>
+
+        </div>
+      </section>
+
+
+      <!-- JUNCTIONS -->
+
+      <section class="category">
+
+        <h2>🚦 Junctions</h2>
+
+        <div class="topic-grid">
+
+          <button
+            class="topic-button"
+            onclick="notReady('Junctions')"
+          >
+            Junctions
+          </button>
+
+        </div>
+      </section>
+
+
+      <!-- ROUNDABOUTS -->
+
+      <section class="category">
+
+        <h2>🔄 Roundabouts</h2>
+
+        <div class="topic-grid">
+
+          <button
+            class="topic-button"
+            onclick="notReady('Roundabouts')"
+          >
+            Roundabouts
+          </button>
+
+        </div>
+      </section>
+
+
+      <!-- ROAD TYPES -->
+
+      <section class="category">
+
+        <h2>🛣️ Road Types</h2>
+
+        <div class="topic-grid">
+
+          <button
+            class="topic-button"
+            onclick="notReady('Dual Carriageways')"
+          >
+            Dual Carriageways
+          </button>
+
+          <button
+            class="topic-button"
+            onclick="notReady('Country Lanes')"
+          >
+            Country Lanes
+          </button>
+
+          <button
+            class="topic-button"
+            onclick="notReady('Motorways')"
+          >
+            Motorways
+          </button>
+
+        </div>
+      </section>
+
+
+      <!-- MANOEUVRES -->
+
+      <section class="category">
+
+        <h2>🅿️ Manoeuvres</h2>
+
+        <div class="topic-grid">
+
+          <button
+            class="topic-button"
+            onclick="notReady('Parallel Parking')"
+          >
+            Parallel Parking
+          </button>
+
+          <button
+            class="topic-button"
+            onclick="notReady('Bay Parking')"
+          >
+            Bay Parking
+          </button>
+
+          <button
+            class="topic-button"
+            onclick="notReady('Pull Up on the Right')"
+          >
+            Pull Up on the Right
+          </button>
+
+        </div>
+      </section>
+
+
+      <!-- DRIVING SKILLS -->
+
+      <section class="category">
+
+        <h2>🚘 Driving Skills</h2>
+
+        <div class="topic-grid">
+
+          <button
+            class="topic-button"
+            onclick="notReady('Meeting Traffic')"
+          >
+            Meeting Traffic
+          </button>
+
+          <button
+            class="topic-button"
+            onclick="notReady('Overtaking')"
+          >
+            Overtaking
+          </button>
+
+          <button
+            class="topic-button"
+            onclick="notReady('Eco Driving')"
+          >
+            Eco Driving
+          </button>
+
+          <button
+            class="topic-button"
+            onclick="notReady('Independent Driving')"
+          >
+            Independent Driving
+          </button>
+
+        </div>
+      </section>
+
+
+      <!-- TEST PREPARATION -->
+
+      <section class="category">
+
+        <h2>📋 Test Preparation</h2>
+
+        <div class="topic-grid">
+
+          <button
+            class="topic-button"
+            onclick="notReady('Show Me, Tell Me')"
+          >
+            Show Me, Tell Me
+          </button>
+
+          <button
+            class="topic-button"
+            onclick="notReady('Mock Test')"
+          >
+            Mock Test
+          </button>
+
+          <button
+            class="topic-button"
+            onclick="notReady('Driving Test')"
+          >
+            Driving Test
+          </button>
+
+        </div>
+      </section>
+
+
+      <!-- INSTRUCTOR HUB -->
+
+      <section class="category">
+
+        <h2>👨‍🏫 Instructor Hub</h2>
+
+        <div class="topic-grid">
+
+          <button
+            class="topic-button instructor"
+            onclick="notReady('Daily Lesson Framework')"
+          >
+            Daily Lesson Framework
+          </button>
+
+          <button
+            class="topic-button instructor"
+            onclick="notReady('First Lesson Assessment')"
+          >
+            First Lesson Assessment
+          </button>
+
+          <button
+            class="topic-button instructor"
+            onclick="notReady('Risk Management')"
+          >
+            Risk Management
+          </button>
+
+          <button
+            class="topic-button instructor"
+            onclick="notReady('Reflection')"
+          >
+            Reflection
+          </button>
+
+          <button
+            class="topic-button instructor"
+            onclick="notReady('Learning and Coaching')"
+          >
+            Learning and Coaching
+          </button>
+
+          <button
+            class="topic-button instructor"
+            onclick="notReady('GDE Matrix')"
+          >
+            GDE Matrix
+          </button>
+
+          <button
+            class="topic-button instructor"
+            onclick="notReady('Standards Check')"
+          >
+            Standards Check
+          </button>
+
+          <button
+            class="topic-button instructor"
+            onclick="notReady('The 17 Competencies')"
+          >
+            The 17 Competencies
+          </button>
+
+          <button
+            class="topic-button instructor"
+            onclick="notReady('DT1 Notes')"
+          >
+            DT1 Notes
+          </button>
+
+        </div>
+      </section>
+
+    </main>
+
+
+    <footer>
+      More videos, diagrams and teaching resources can be
+      added to each section over time.
+    </footer>
 
   </div>
+
+
+  <!-- MESSAGE SHOWN FOR PAGES NOT YET CREATED -->
+
+  <div id="message-box">
+
+    <div class="message-card">
+
+      <h2 id="message-title">
+        Section not added
+      </h2>
+
+      <p>
+        This section has not been added yet.
+        It can be created when you have a video,
+        diagram or teaching resource for it.
+      </p>
+
+      <button
+        class="close-button"
+        onclick="closeMessage()"
+      >
+        Close
+      </button>
+
+    </div>
+  </div>
+
+
+  <script>
+    function notReady(topic) {
+      document.getElementById("message-title").textContent = topic;
+
+      document.getElementById("message-box").style.display =
+        "flex";
+    }
+
+    function closeMessage() {
+      document.getElementById("message-box").style.display =
+        "none";
+    }
+  </script>
+
 </body>
 </html>
