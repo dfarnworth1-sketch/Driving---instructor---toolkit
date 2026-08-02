@@ -308,7 +308,7 @@ const toolkitData = [
       url: "Commanders_Intent_Framework_Final.docx"
     }
   ]
-},]
+},
       },
       {
         name: "First Lesson Assessment",
