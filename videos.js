@@ -360,6 +360,16 @@ const toolkitData = [
       {
         name: "The 17 Competencies",
         videos: []
+        {
+  name: "The 17 Competencies",
+  videos: [
+    {
+      title: "Part 3 Marking Sheet",
+      type: "pdf",
+      url: "part3-marking-sheet.pdf"
+    }
+  ]
+},
       },
       {
         name: "DT1 Notes",
