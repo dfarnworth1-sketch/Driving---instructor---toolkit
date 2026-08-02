@@ -299,12 +299,12 @@ const toolkitData = [
         videos: [
           {
             title: "ADI Framework",
-            type: "doc",
+            type: "pdf",
             url: "ADI_Framework_Final.docx"
           },
           {
             title: "Commander's Intent Framework",
-            type: "doc",
+            type: "pdf",
             url: "Commanders_Intent_Framework_Final.docx"
           }
         ]
