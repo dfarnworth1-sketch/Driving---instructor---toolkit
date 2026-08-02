@@ -402,57 +402,45 @@
           </div>
         `;
       } else {
-        topic.videos.forEach(function (video) {
-          const card = document.createElement("div");
+       topic.videos.forEach(function (resource) {
+  const card = document.createElement("div");
 
-          card.className = "video-card";
+  card.className = "video-card";
 
-          card.innerHTML = `
-            <h2>${video.title}</h2>
+  if (resource.type === "pdf") {
 
-            <div class="video">
-              <iframe
-                src="https://www.youtube.com/embed/${video.id}"
-                title="${video.title}"
-                allow="accelerometer; autoplay;
-                       clipboard-write; encrypted-media;
-                       gyroscope; picture-in-picture;
-                       web-share"
-                allowfullscreen>
-              </iframe>
-            </div>
-          `;
+    card.innerHTML = `
+      <h2>📄 ${resource.title}</h2>
 
-          videoList.appendChild(card);
-        });
-      }
+      <p>
+        <a href="${resource.url}" target="_blank">
+          Open PDF
+        </a>
+      </p>
+    `;
 
-      hideAllScreens();
+  } else {
 
-      document
-        .getElementById("topic-screen")
-        .classList.add("active");
+    card.innerHTML = `
+      <h2>${resource.title}</h2>
 
-      window.scrollTo(0, 0);
-    }
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed/${resource.id}"
+          title="${resource.title}"
+          allow="accelerometer; autoplay;
+                 clipboard-write; encrypted-media;
+                 gyroscope; picture-in-picture;
+                 web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    `;
 
-    function buildHomeScreen() {
-      const categoryGrid =
-        document.getElementById("category-grid");
+  }
 
-      toolkitData.forEach(function (category, index) {
-        const button = document.createElement("button");
-
-        button.className = "category-card";
-
-        button.textContent =
-          category.icon + " " + category.name;
-
-        button.onclick = function () {
-          showCategory(index);
-        };
-
-        categoryGrid.appendChild(button);
+  videoList.appendChild(card);
+});
       });
     }
 
