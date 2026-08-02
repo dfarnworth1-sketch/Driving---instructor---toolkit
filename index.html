@@ -419,36 +419,43 @@
           card.className = "video-card";
 
           if (resource.type === "pdf") {
-            card.innerHTML = `
-              <h2>📄 ${resource.title}</h2>
 
-              <a
-                class="resource-link"
-                href="${resource.url}"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Open PDF
-              </a>
-            `;
-          } else {
-            card.innerHTML = `
-              <h2>${resource.title}</h2>
+    card.innerHTML = `
+        <h2>📄 ${resource.title}</h2>
 
-              <div class="video">
-                <iframe
-                  src="https://www.youtube.com/embed/${resource.id}"
-                  title="${resource.title}"
-                  allow="accelerometer; autoplay;
-                         clipboard-write; encrypted-media;
-                         gyroscope; picture-in-picture;
-                         web-share"
-                  allowfullscreen>
-                </iframe>
-              </div>
-            `;
-          }
+        <a class="resource-link"
+           href="${resource.url}"
+           target="_blank">
+           Open PDF
+        </a>
+    `;
 
+} else if (resource.type === "doc") {
+
+    card.innerHTML = `
+        <h2>📄 ${resource.title}</h2>
+
+        <a class="resource-link"
+           href="${resource.url}"
+           target="_blank">
+           Open Document
+        </a>
+    `;
+
+} else {
+
+    card.innerHTML = `
+        <h2>${resource.title}</h2>
+
+        <div class="video">
+            <iframe
+                src="https://www.youtube.com/embed/${resource.id}"
+                title="${resource.title}"
+                allowfullscreen>
+            </iframe>
+        </div>
+    `;
+}
           videoList.appendChild(card);
         });
       }
