@@ -367,7 +367,6 @@ const toolkitData = [
     }
   ]
 },
-      },
       {
         name: "DT1 Notes",
         videos: [
