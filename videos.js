@@ -294,21 +294,20 @@ const toolkitData = [
     name: "Instructor Hub",
     icon: "👨‍🏫",
     topics: [
-      {
-  name: "Daily Lesson Framework",
-  videos: [
-    {
-      title: "ADI Framework",
-      type: "doc",
-      url: "ADI_Framework_Final.docx"
-    },
-    {
-      title: "Commander's Intent Framework",
-      type: "doc",
-      url: "Commanders_Intent_Framework_Final.docx"
-    }
-  ]
-},
+           {
+        name: "Daily Lesson Framework",
+        videos: [
+          {
+            title: "ADI Framework",
+            type: "doc",
+            url: "ADI_Framework_Final.docx"
+          },
+          {
+            title: "Commander's Intent Framework",
+            type: "doc",
+            url: "Commanders_Intent_Framework_Final.docx"
+          }
+        ]
       },
       {
         name: "First Lesson Assessment",
