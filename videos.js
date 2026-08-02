@@ -360,10 +360,7 @@ const toolkitData = [
     }
   ]
 },
-          }
-        ]
-      },
-      {
+  {
         name: "Advanced Driving",
         videos: [
           {
