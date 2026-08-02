@@ -300,12 +300,12 @@ const toolkitData = [
           {
             title: "ADI Framework",
             type: "pdf",
-            url: "ADI_Framework_Final.docx"
+            url: "ADI_Framework_Final.pdf"
           },
           {
             title: "Commander's Intent Framework",
             type: "pdf",
-            url: "Commanders_Intent_Framework_Final.docx"
+            url: "Commanders_Intent_Framework_Final.pdf"
           }
         ]
       },
