@@ -18,10 +18,10 @@
 
     body {
       margin: 0;
-      padding: 18px;
-      font-family: Arial, sans-serif;
+      padding: 16px;
       background: #0f172a;
       color: #0f172a;
+      font-family: Arial, sans-serif;
     }
 
     .container {
@@ -31,10 +31,10 @@
     }
 
     header {
-      background: white;
-      padding: 25px;
-      border-radius: 22px;
       margin-bottom: 18px;
+      padding: 24px;
+      border-radius: 22px;
+      background: white;
       text-align: center;
     }
 
@@ -49,103 +49,149 @@
       font-size: 18px;
     }
 
-    .main-grid {
-      display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-    }
-
-    .category {
-      background: white;
-      border-radius: 20px;
-      padding: 20px;
-    }
-
-    .category h2 {
-      margin: 0 0 15px;
-      font-size: 25px;
-    }
-
+    .category-grid,
     .topic-grid {
       display: grid;
-      gap: 11px;
+      grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
     }
 
-    .topic-button {
-      display: block;
-      width: 100%;
-      padding: 16px;
+    .category-card {
+      min-height: 130px;
+      padding: 22px;
       border: none;
-      border-radius: 13px;
-      background: #2563eb;
+      border-radius: 20px;
       color: white;
-      text-decoration: none;
-      text-align: center;
       font-family: Arial, sans-serif;
-      font-size: 18px;
+      font-size: 24px;
       font-weight: bold;
       cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);
     }
 
-    .topic-button:hover {
-      background: #1d4ed8;
+    .category-card:nth-child(8n + 1) {
+      background: #2563eb;
     }
 
-    .instructor {
+    .category-card:nth-child(8n + 2) {
+      background: #059669;
+    }
+
+    .category-card:nth-child(8n + 3) {
+      background: #d97706;
+    }
+
+    .category-card:nth-child(8n + 4) {
       background: #7c3aed;
     }
 
-    .instructor:hover {
+    .category-card:nth-child(8n + 5) {
+      background: #0891b2;
+    }
+
+    .category-card:nth-child(8n + 6) {
+      background: #db2777;
+    }
+
+    .category-card:nth-child(8n + 7) {
+      background: #475569;
+    }
+
+    .category-card:nth-child(8n + 8) {
       background: #6d28d9;
     }
 
-    #message-box {
+    .screen {
       display: none;
-      position: fixed;
-      inset: 0;
-      padding: 20px;
-      background: rgba(15, 23, 42, 0.88);
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
     }
 
-    .message-card {
-      width: 100%;
-      max-width: 430px;
-      padding: 25px;
-      border-radius: 20px;
+    .screen.active {
+      display: block;
+    }
+
+    .page-panel {
+      padding: 22px;
+      border-radius: 22px;
       background: white;
-      text-align: center;
     }
 
-    .message-card h2 {
-      margin-top: 0;
+    .page-heading {
+      margin: 0 0 18px;
+      font-size: 34px;
     }
 
-    .message-card p {
-      color: #64748b;
-      font-size: 18px;
-      line-height: 1.45;
-    }
-
-    .close-button {
-      width: 100%;
-      margin-top: 10px;
-      padding: 14px;
+    .back-button {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 13px 18px;
       border: none;
-      border-radius: 12px;
-      background: #2563eb;
+      border-radius: 11px;
+      background: #475569;
       color: white;
-      font-size: 18px;
+      font-size: 17px;
       font-weight: bold;
       cursor: pointer;
+    }
+
+    .topic-button {
+      min-height: 84px;
+      padding: 18px;
+      border: none;
+      border-radius: 15px;
+      background: #2563eb;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .topic-button.empty {
+      background: #64748b;
+    }
+
+    .video-card {
+      margin-bottom: 22px;
+      padding: 20px;
+      border-radius: 18px;
+      background: #f1f5f9;
+    }
+
+    .video-card h2 {
+      margin: 0 0 14px;
+      font-size: 24px;
+    }
+
+    .video {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      overflow: hidden;
+      border-radius: 14px;
+      background: black;
+    }
+
+    .video iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .empty-message {
+      padding: 25px;
+      border-radius: 16px;
+      background: #f1f5f9;
+      color: #64748b;
+      text-align: center;
+      font-size: 19px;
     }
 
     footer {
       margin-top: 18px;
-      padding: 18px;
+      padding: 17px;
       border-radius: 18px;
       background: white;
       color: #64748b;
@@ -154,15 +200,20 @@
 
     @media (max-width: 600px) {
       body {
-        padding: 12px;
+        padding: 11px;
       }
 
       header h1 {
         font-size: 34px;
       }
 
-      .main-grid {
+      .category-grid,
+      .topic-grid {
         grid-template-columns: 1fr;
+      }
+
+      .category-card {
+        min-height: 100px;
       }
     }
   </style>
@@ -172,417 +223,240 @@
 
   <div class="container">
 
-    <header>
-      <h1>ADI Toolkit</h1>
+    <!-- HOME SCREEN -->
 
-      <p>
-        Teaching videos and resources for use during lessons.
-      </p>
-    </header>
+    <section
+      id="home-screen"
+      class="screen active"
+    >
 
+      <header>
+        <h1>ADI Toolkit</h1>
 
-    <main class="main-grid">
+        <p>
+          Teaching videos and resources for use during lessons.
+        </p>
+      </header>
 
-      <!-- VEHICLE CONTROLS -->
+      <main
+        id="category-grid"
+        class="category-grid"
+      ></main>
 
-      <section class="category">
+      <footer>
+        Choose a category to see its subjects.
+      </footer>
 
-        <h2>🚗 Vehicle Controls</h2>
+    </section>
 
-        <div class="topic-grid">
 
-          <button
-            class="topic-button"
-            onclick="notReady('Cockpit Drill')"
-          >
-            Cockpit Drill
-          </button>
+    <!-- CATEGORY SCREEN -->
 
-          <a
-            class="topic-button"
-            href="clutch.html"
-          >
-            Clutch
-          </a>
-
-          <a
-            class="topic-button"
-            href="gears.html"
-          >
-            Gears
-          </a>
-
-          <button
-            class="topic-button"
-            onclick="notReady('Steering')"
-          >
-            Steering
-          </button>
-
-          <a
-            class="topic-button"
-            href="brakes.html"
-          >
-            Brakes
-          </a>
-
-          <a
-            class="topic-button"
-            href="positioning.html"
-          >
-            Positioning
-          </a>
-
-        </div>
-      </section>
-
-
-      <!-- BASIC DRIVING -->
-
-      <section class="category">
-
-        <h2>🚙 Basic Driving</h2>
-
-        <div class="topic-grid">
-
-          <button
-            class="topic-button"
-            onclick="notReady('Moving Off and Stopping')"
-          >
-            Moving Off and Stopping
-          </button>
-
-          <button
-            class="topic-button"
-            onclick="notReady('Mirrors')"
-          >
-            Mirrors
-          </button>
-
-          <button
-            class="topic-button"
-            onclick="notReady('Signals')"
-          >
-            Signals
-          </button>
-
-          <button
-            class="topic-button"
-            onclick="notReady('Observation')"
-          >
-            Observation
-          </button>
-
-          <button
-            class="topic-button"
-            onclick="notReady('Speed and Planning')"
-          >
-            Speed and Planning
-          </button>
-
-        </div>
-      </section>
-
-
-      <!-- JUNCTIONS -->
-
-      <section class="category">
-
-        <h2>🚦 Junctions</h2>
-
-        <div class="topic-grid">
-
-          <button
-            class="topic-button"
-            onclick="notReady('Junctions')"
-          >
-            Junctions
-          </button>
-
-        </div>
-      </section>
-
-
-      <!-- ROUNDABOUTS -->
-
-      <section class="category">
-
-        <h2>🔄 Roundabouts</h2>
-
-        <div class="topic-grid">
-
-          <button
-            class="topic-button"
-            onclick="notReady('Roundabouts')"
-          >
-            Roundabouts
-          </button>
-
-        </div>
-      </section>
-
-
-      <!-- ROAD TYPES -->
-
-      <section class="category">
-
-        <h2>🛣️ Road Types</h2>
-
-        <div class="topic-grid">
-
-          <button
-            class="topic-button"
-            onclick="notReady('Dual Carriageways')"
-          >
-            Dual Carriageways
-          </button>
-
-          <button
-            class="topic-button"
-            onclick="notReady('Country Lanes')"
-          >
-            Country Lanes
-          </button>
-
-          <button
-            class="topic-button"
-            onclick="notReady('Motorways')"
-          >
-            Motorways
-          </button>
-
-        </div>
-      </section>
-
-
-      <!-- MANOEUVRES -->
-
-      <section class="category">
-
-        <h2>🅿️ Manoeuvres</h2>
-
-        <div class="topic-grid">
-
-          <button
-            class="topic-button"
-            onclick="notReady('Parallel Parking')"
-          >
-            Parallel Parking
-          </button>
-
-          <button
-            class="topic-button"
-            onclick="notReady('Bay Parking')"
-          >
-            Bay Parking
-          </button>
-
-          <button
-            class="topic-button"
-            onclick="notReady('Pull Up on the Right')"
-          >
-            Pull Up on the Right
-          </button>
-
-        </div>
-      </section>
-
-
-      <!-- DRIVING SKILLS -->
-
-      <section class="category">
-
-        <h2>🚘 Driving Skills</h2>
-
-        <div class="topic-grid">
-
-          <button
-            class="topic-button"
-            onclick="notReady('Meeting Traffic')"
-          >
-            Meeting Traffic
-          </button>
-
-          <button
-            class="topic-button"
-            onclick="notReady('Overtaking')"
-          >
-            Overtaking
-          </button>
-
-          <button
-            class="topic-button"
-            onclick="notReady('Eco Driving')"
-          >
-            Eco Driving
-          </button>
-
-          <button
-            class="topic-button"
-            onclick="notReady('Independent Driving')"
-          >
-            Independent Driving
-          </button>
-
-        </div>
-      </section>
-
-
-      <!-- TEST PREPARATION -->
-
-      <section class="category">
-
-        <h2>📋 Test Preparation</h2>
-
-        <div class="topic-grid">
-
-          <button
-            class="topic-button"
-            onclick="notReady('Show Me, Tell Me')"
-          >
-            Show Me, Tell Me
-          </button>
-
-          <button
-            class="topic-button"
-            onclick="notReady('Mock Test')"
-          >
-            Mock Test
-          </button>
-
-          <button
-            class="topic-button"
-            onclick="notReady('Driving Test')"
-          >
-            Driving Test
-          </button>
-
-        </div>
-      </section>
-
-
-      <!-- INSTRUCTOR HUB -->
-
-      <section class="category">
-
-        <h2>👨‍🏫 Instructor Hub</h2>
-
-        <div class="topic-grid">
-
-          <button
-            class="topic-button instructor"
-            onclick="notReady('Daily Lesson Framework')"
-          >
-            Daily Lesson Framework
-          </button>
-
-          <button
-            class="topic-button instructor"
-            onclick="notReady('First Lesson Assessment')"
-          >
-            First Lesson Assessment
-          </button>
-
-          <button
-            class="topic-button instructor"
-            onclick="notReady('Risk Management')"
-          >
-            Risk Management
-          </button>
-
-          <button
-            class="topic-button instructor"
-            onclick="notReady('Reflection')"
-          >
-            Reflection
-          </button>
-
-          <button
-            class="topic-button instructor"
-            onclick="notReady('Learning and Coaching')"
-          >
-            Learning and Coaching
-          </button>
-
-          <button
-            class="topic-button instructor"
-            onclick="notReady('GDE Matrix')"
-          >
-            GDE Matrix
-          </button>
-
-          <button
-            class="topic-button instructor"
-            onclick="notReady('Standards Check')"
-          >
-            Standards Check
-          </button>
-
-          <button
-            class="topic-button instructor"
-            onclick="notReady('The 17 Competencies')"
-          >
-            The 17 Competencies
-          </button>
-
-          <button
-            class="topic-button instructor"
-            onclick="notReady('DT1 Notes')"
-          >
-            DT1 Notes
-          </button>
-
-        </div>
-      </section>
-
-    </main>
-
-
-    <footer>
-      More videos, diagrams and teaching resources can be
-      added to each section over time.
-    </footer>
-
-  </div>
-
-
-  <div id="message-box">
-
-    <div class="message-card">
-
-      <h2 id="message-title">
-        Section not added
-      </h2>
-
-      <p>
-        This section has not been added yet.
-        It can be created when you have a video,
-        diagram or teaching resource for it.
-      </p>
+    <section
+      id="category-screen"
+      class="screen"
+    >
 
       <button
-        class="close-button"
-        onclick="closeMessage()"
+        class="back-button"
+        onclick="showHome()"
       >
-        Close
+        ← Back to ADI Toolkit
       </button>
 
-    </div>
+      <div class="page-panel">
+
+        <h1
+          id="category-heading"
+          class="page-heading"
+        ></h1>
+
+        <div
+          id="topic-grid"
+          class="topic-grid"
+        ></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TOPIC AND VIDEO SCREEN -->
+
+    <section
+      id="topic-screen"
+      class="screen"
+    >
+
+      <button
+        class="back-button"
+        onclick="showCurrentCategory()"
+      >
+        ← Back to subjects
+      </button>
+
+      <div class="page-panel">
+
+        <h1
+          id="topic-heading"
+          class="page-heading"
+        ></h1>
+
+        <div id="video-list"></div>
+
+      </div>
+
+    </section>
+
   </div>
 
 
+  <script src="videos.js"></script>
+
   <script>
-    function notReady(topic) {
-      document.getElementById("message-title").textContent = topic;
+    let currentCategoryIndex = 0;
 
-      document.getElementById("message-box").style.display =
-        "flex";
+    function hideAllScreens() {
+      document
+        .querySelectorAll(".screen")
+        .forEach(function (screen) {
+          screen.classList.remove("active");
+        });
     }
 
-    function closeMessage() {
-      document.getElementById("message-box").style.display =
-        "none";
+    function showHome() {
+      hideAllScreens();
+
+      document
+        .getElementById("home-screen")
+        .classList.add("active");
+
+      window.scrollTo(0, 0);
     }
+
+    function showCategory(categoryIndex) {
+      currentCategoryIndex = categoryIndex;
+
+      const category = toolkitData[categoryIndex];
+
+      document.getElementById(
+        "category-heading"
+      ).textContent =
+        category.icon + " " + category.name;
+
+      const topicGrid =
+        document.getElementById("topic-grid");
+
+      topicGrid.innerHTML = "";
+
+      category.topics.forEach(function (topic, topicIndex) {
+        const button = document.createElement("button");
+
+        button.className = "topic-button";
+
+        if (!topic.videos || topic.videos.length === 0) {
+          button.classList.add("empty");
+        }
+
+        button.textContent = topic.name;
+
+        button.onclick = function () {
+          showTopic(categoryIndex, topicIndex);
+        };
+
+        topicGrid.appendChild(button);
+      });
+
+      hideAllScreens();
+
+      document
+        .getElementById("category-screen")
+        .classList.add("active");
+
+      window.scrollTo(0, 0);
+    }
+
+    function showCurrentCategory() {
+      showCategory(currentCategoryIndex);
+    }
+
+    function showTopic(categoryIndex, topicIndex) {
+      currentCategoryIndex = categoryIndex;
+
+      const topic =
+        toolkitData[categoryIndex].topics[topicIndex];
+
+      document.getElementById(
+        "topic-heading"
+      ).textContent = topic.name;
+
+      const videoList =
+        document.getElementById("video-list");
+
+      videoList.innerHTML = "";
+
+      if (!topic.videos || topic.videos.length === 0) {
+        videoList.innerHTML = `
+          <div class="empty-message">
+            No videos or resources have been added yet.
+          </div>
+        `;
+      } else {
+        topic.videos.forEach(function (video) {
+          const card = document.createElement("div");
+
+          card.className = "video-card";
+
+          card.innerHTML = `
+            <h2>${video.title}</h2>
+
+            <div class="video">
+              <iframe
+                src="https://www.youtube.com/embed/${video.id}"
+                title="${video.title}"
+                allow="accelerometer; autoplay;
+                       clipboard-write; encrypted-media;
+                       gyroscope; picture-in-picture;
+                       web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+          `;
+
+          videoList.appendChild(card);
+        });
+      }
+
+      hideAllScreens();
+
+      document
+        .getElementById("topic-screen")
+        .classList.add("active");
+
+      window.scrollTo(0, 0);
+    }
+
+    function buildHomeScreen() {
+      const categoryGrid =
+        document.getElementById("category-grid");
+
+      toolkitData.forEach(function (category, index) {
+        const button = document.createElement("button");
+
+        button.className = "category-card";
+
+        button.textContent =
+          category.icon + " " + category.name;
+
+        button.onclick = function () {
+          showCategory(index);
+        };
+
+        categoryGrid.appendChild(button);
+      });
+    }
+
+    buildHomeScreen();
   </script>
 
 </body>
