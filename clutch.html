@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clutch Videos</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #0f172a;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    header,
+    .video-card {
+      background: white;
+      padding: 22px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 38px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    p {
+      color: #64748b;
+      font-size: 18px;
+    }
+
+    iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
+      border-radius: 14px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 14px 18px;
+      border-radius: 12px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <a class="back" href="index.html">← Back to toolkit</a>
+
+    <header>
+      <h1>Clutch</h1>
+      <p>Videos explaining how the clutch works.</p>
+    </header>
+
+    <div class="video-card">
+      <h2>Manual clutch working</h2>
+      <iframe
+        src="https://www.youtube.com/embed/lqo0_StXf4M"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="video-card">
+      <h2>Clutch operation</h2>
+      <iframe
+        src="https://www.youtube.com/embed/ErCw1FfLPf4"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+</body>
+</html>
