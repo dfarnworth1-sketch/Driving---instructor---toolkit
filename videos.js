@@ -321,8 +321,15 @@ const toolkitData = [
         ]
       },
       {
-        name: "DT1 Notes",
-        videos: [
+  name: "DT1 Notes",
+  videos: [
+    {
+      title: "DVSA DL25 Driving Test Report",
+      type: "pdf",
+      url: "dl25-driving-test-report.pdf"
+    }
+  ]
+}
         ]
       }
     ]
