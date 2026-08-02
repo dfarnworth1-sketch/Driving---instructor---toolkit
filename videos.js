@@ -359,9 +359,8 @@ const toolkitData = [
       },
       {
         name: "The 17 Competencies",
-        videos: []
+        videos: [
         {
-    {
       title: "Part 3 Marking Sheet",
       type: "pdf",
       url: "part3-marking-sheet.pdf"
