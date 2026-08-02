@@ -295,8 +295,6 @@ const toolkitData = [
     icon: "👨‍🏫",
     topics: [
       {
-        name: "Daily Lesson Framework",
-        videos: [{
   name: "Daily Lesson Framework",
   videos: [
     {
