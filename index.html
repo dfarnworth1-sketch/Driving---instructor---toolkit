@@ -10,7 +10,150 @@
   >
 
   <title>Dave's ADI Toolkit</title>
+    /* ===== PROFESSIONAL APPEARANCE UPDATE ===== */
 
+    body {
+      background:
+        linear-gradient(180deg, #0f172a 0%, #172554 100%);
+      min-height: 100vh;
+    }
+
+    header {
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.22);
+    }
+
+    header h1 {
+      color: #0f172a;
+      letter-spacing: -1px;
+    }
+
+    header p {
+      line-height: 1.5;
+    }
+
+    .category-card,
+    .topic-button,
+    .back-button,
+    .resource-link {
+      transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        filter 0.18s ease;
+    }
+
+    .category-card:hover,
+    .topic-button:hover,
+    .back-button:hover,
+    .resource-link:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.06);
+    }
+
+    .category-card:active,
+    .topic-button:active,
+    .back-button:active,
+    .resource-link:active {
+      transform: translateY(0);
+    }
+
+    .category-card {
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .topic-button {
+      box-shadow: 0 7px 18px rgba(37, 99, 235, 0.22);
+    }
+
+    .topic-button.empty {
+      opacity: 0.82;
+      box-shadow: none;
+    }
+
+    .page-panel {
+      border: 1px solid rgba(148, 163, 184, 0.22);
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    .page-heading {
+      padding-bottom: 14px;
+      border-bottom: 2px solid #e2e8f0;
+      color: #0f172a;
+    }
+
+    .video-card {
+      border: 1px solid #dbe3ee;
+      background: white;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
+    }
+
+    .video-card h2 {
+      color: #1e293b;
+      line-height: 1.3;
+    }
+
+    .video {
+      box-shadow: 0 5px 16px rgba(15, 23, 42, 0.22);
+    }
+
+    .resource-link {
+      border: none;
+      box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+    }
+
+    /* Red buttons for PDF files */
+    .resource-link[href$=".pdf"] {
+      background: #dc2626;
+      box-shadow: 0 6px 16px rgba(220, 38, 38, 0.25);
+    }
+
+    .resource-link[href$=".pdf"]:hover {
+      background: #b91c1c;
+    }
+
+    /* Blue buttons for Word documents */
+    .resource-link[href$=".docx"],
+    .resource-link[href$=".doc"] {
+      background: #2563eb;
+    }
+
+    footer {
+      border: 1px solid rgba(148, 163, 184, 0.22);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 20px 16px;
+      }
+
+      header h1 {
+        font-size: 32px;
+      }
+
+      .page-panel {
+        padding: 17px;
+      }
+
+      .page-heading {
+        font-size: 28px;
+      }
+
+      .video-card {
+        padding: 16px;
+      }
+
+      .video-card h2 {
+        font-size: 21px;
+      }
+
+      .resource-link {
+        padding: 15px;
+        font-size: 17px;
+      }
+    }
+
+    /* ===== END APPEARANCE UPDATE ===== */
   <style>
     * {
       box-sizing: border-box;
