@@ -272,8 +272,14 @@ const toolkitData = [
       }
     ]
   },
-
-  {
+    {
+  name: "Kettering – Tricky Areas",
+  videos: []
+},
+{
+  name: "Wellingborough – Tricky Areas",
+  videos: []
+},
     name: "Emergency Situations",
     icon: "🚨",
     topics: [
