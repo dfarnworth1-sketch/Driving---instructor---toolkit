@@ -269,17 +269,18 @@ const toolkitData = [
             id: "YwgzdI03nJk"
           }
         ]
-      }
-    ]
-  },
-    {
-  name: "Kettering – Tricky Areas",
+      },
+      {
+ name: "Kettering – Tricky Areas",
   videos: []
 },
 {
   name: "Wellingborough – Tricky Areas",
   videos: []
-},
+   }
+   ]
+  },
+    {
     name: "Emergency Situations",
     icon: "🚨",
     topics: [
