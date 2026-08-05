@@ -363,6 +363,11 @@ const toolkitData = [
         type: "image",
         url: "Wellingborough crossroads.jpg"
 },
+           {
+    title: "📍 Open in Google Maps - Wellingborough Crossroads",
+    type: "link",
+    url: "https://maps.app.goo.gl/Wh7v6H6Pxn51Qmon7?g_st=ac"
+},
 {
     title: "Hardwater Crossing",
     type: "image",
