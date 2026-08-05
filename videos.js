@@ -355,8 +355,6 @@ const toolkitData = [
     url: "https://maps.app.goo.gl/5BmzidZDfRYvRkWXA?g_st=ac"
    }
 ]         
-}, 
-   ]
   },
     {
   name: "Wellingborough – Tricky Areas",
