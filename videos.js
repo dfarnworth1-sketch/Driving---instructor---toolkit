@@ -306,7 +306,6 @@ const toolkitData = [
     title: "A14 - J7 Roundabout",
     type: "image",
     url: "A14 - J7 Roundabout.jpg"
-}
  }
    ]
   },
