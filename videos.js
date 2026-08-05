@@ -320,7 +320,6 @@ const toolkitData = [
     url: "Spiral RB.jpg"
    },
 {
-  {
     title: "📍 Open in Google Maps",
     type: "link",
     url: "https://maps.app.goo.gl/XzFByAWGJpwS8zGC6?g_st=ac"
