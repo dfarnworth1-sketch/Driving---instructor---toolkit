@@ -302,7 +302,7 @@ const toolkitData = [
     type: "image",
     url: "Spiral RB.jpg"
    },
-}
+{
     title: "Broughton",
     type: "image",
     url: "Broughton.jpg"
