@@ -373,7 +373,8 @@ const toolkitData = [
     type: "link",
     url: "https://maps.app.goo.gl/EktaTJzKA4f2uc7P9?g_st=ac"
    }
-]         
+]
+      } 
   },
     {
     name: "Emergency Situations",
