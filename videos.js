@@ -301,7 +301,6 @@ const toolkitData = [
     title: "Broughton",
     type: "image",
     url: "Broughton.jpg"
-}
  }
    ]
   },
