@@ -298,10 +298,7 @@ const toolkitData = [
   url: "Double RB 4.jpg"
 },
 ]           
-},
-] 
-  },
-{  
+}, 
   name: "Wellingborough – Tricky Areas",
   videos: []
    }
