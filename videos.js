@@ -367,8 +367,11 @@ const toolkitData = [
     title: "Hardwater Crossing",
     type: "image",
     url: "Hardwater crossing.jpg"
-    }
-]
+    },
+           {
+    title: "📍 Open in Google Maps - Hardwater Crossing",
+    type: "link",
+    url: "https://maps.app.goo.gl/EktaTJzKA4f2uc7P9?g_st=ac"
   },
     ]
      }, 
