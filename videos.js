@@ -263,18 +263,19 @@ const toolkitData = [
         ]
       },
       {
-        name: "Mock Test",
+         name: "Mock Test",
         videos: [
     {
         title: "GOV.UK Ready to Pass - Mock Tests",
         type: "link",
         url: "https://readytopass.campaign.gov.uk/mock-driving-tests/"
-          },
-      {
+      },
+{
     title: "DVSA - Carry Out Mock Driving Tests",
     type: "link",
     url: "https://www.gov.uk/guidance/carry-out-mock-driving-tests-for-your-pupils"
-}
+
+    }
 ]
       },
       {
