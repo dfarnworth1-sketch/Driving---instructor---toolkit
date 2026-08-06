@@ -14,6 +14,7 @@ const toolkitData = [
         name: "Clutch",
         videos: [
           { title: "Manual Clutch Working", id: "lqo0_StXf4M" },
+          {title: "Understanding the Clutch", id: "devo3kdSPQY"},
           { title: "Clutch Operation", id: "ErCw1FfLPf4" },
           { title: "Clutch Demonstration", id: "k1SBFfMbksI" },
           { title: "Clutch – Video 4", id: "kLGpfdRFxxU" },
