@@ -398,37 +398,10 @@ const toolkitData = [
 ]
 },       
   {
-    name: "Instructor Hub",
+    name: "Driver Psychology",
     icon: "👨‍🏫",
     topics: [
            {
-        name: "Daily Lesson Framework",
-        videos: [
-          {
-            title: "ADI Framework",
-            type: "pdf",
-            url: "ADI_Framework_Final.pdf"
-          },
-          {
-            title: "Commander's Intent Framework",
-            type: "pdf",
-            url: "Commanders_Intent_Framework_Final.pdf"
-          }
-        ]
-      },
-      {
-        name: "First Lesson Assessment",
-        videos: []
-      },
-      {
-        name: "Risk Management",
-        videos: []
-      },
-      {
-        name: "Reflection",
-        videos: []
-      },
-      {
         name: "Thoughts and Feelings",
         videos: [
           { title: "Anxiety – Video 1", id: "wiNdXiZzPPA" },
@@ -467,59 +440,6 @@ const toolkitData = [
     }
   ]
 },
-  {
-        name: "Advanced Driving",
-        videos: [
-          {
-            title: "How to Pass an Advanced Driving Course",
-            id: "7ZD3NZ4H6K8"
-          }
-        ]
-      },
-      {
-        name: "ADI Training videos",
-        videos: [{
-    title: "Standards Check - Live Training",
-    id: "y5AFELcGlDI"
- },
-      {
-    title: "Skills or topics",
-    id: "BODq8IDWrnE"
-      },
-      {
-    title: "Use T-GROW",
-    id: "uvqMWvOm2nk"
-},
-     { 
-    title: "Andrew Love, Chatting with ADIs",
-    id: "rxP1L2ft0NU"
-}, 
- {                 
-    title: "The Skill Every Coach Needs",
-    id: "8i31-c2zh6A"
- }
-  ]
-},
-      {
-        name: "The 17 Competencies",
-        videos: [
-        {
-      title: "Part 3 Marking Sheet",
-      type: "pdf",
-      url: "part-3-marking-sheet.pdf"
-    }
-  ]
-},
-      {
-        name: "DT1 Notes",
-        videos: [
-          {
-            title: "DVSA DL25 Driving Test Report",
-            type: "pdf",
-            url: "dl25-driving-test-report.pdf"
-           }
-    ]
-  }
   ]
  }     
 ];
