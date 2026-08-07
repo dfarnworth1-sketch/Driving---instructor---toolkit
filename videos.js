@@ -521,9 +521,11 @@ const toolkitData = [
             title: "DVSA DL25 Driving Test Report",
             type: "pdf",
             url: "dl25-driving-test-report.pdf"
-          }
-        ]
-      },
+           }
+]
+},
+]
+},
    {
     name: "Tricky Areas",
     topics: [
