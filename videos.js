@@ -495,6 +495,10 @@ const toolkitData = [
     type: "link",
     url: "https://maps.app.goo.gl/EktaTJzKA4f2uc7P9?g_st=ac"
       }
+      ]
+}
+]
+},       
   {
     name: "Instructor Hub",
     icon: "👨‍🏫",
@@ -616,11 +620,6 @@ const toolkitData = [
             type: "pdf",
             url: "dl25-driving-test-report.pdf"
            }
-]
-},
-]
-},
-  
     ]
   }
   ]
