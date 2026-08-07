@@ -345,16 +345,7 @@ const toolkitData = [
         ]
       },
       {
-        name: "Learning and Coaching",
-        videos: [
-          {
-            title: "A Logical Order for Learning to Drive",
-            id: "FMj9SvIGfcg"
-          }
-          
-        ]
-      },
-      {
+       
         name: "GDE Matrix",
         videos: [
           {
