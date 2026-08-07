@@ -400,7 +400,101 @@ const toolkitData = [
       }
     ]
   },
-
+ {
+    name: "Tricky Areas",
+    icon: "📍",
+    topics: [
+        {
+            name: "Kettering – Tricky Areas",
+  videos: [{
+  title: "Double Roundabout ",
+  type: "image",
+  url: "Double RB 1.jpg"
+},
+{
+    title: "📍 Open in Google Maps",
+    type: "link",
+    url: "https://maps.app.goo.gl/XW14MzfB24HoAaiX7?g_st=ac"
+},
+  {
+  title: "Double Roundabout (3 lanes on approach)",
+  type: "image",
+  url: "Double RB 2 (3 lanes on approach).jpg"
+},
+{
+  title: "Double Roundabout ",
+  type: "image",
+  url: "Double RB 3.jpg"
+},
+{
+  title: "Double Roundabout ",
+  type: "image",
+  url: "Double RB 4.jpg"
+  },
+{
+    title: "Spiral Roundabout",
+    type: "image",
+    url: "Spiral RB.jpg"
+   },
+{
+    title: "📍 Open in Google Maps",
+    type: "link",
+    url: "https://maps.app.goo.gl/XzFByAWGJpwS8zGC6?g_st=ac"
+},
+  { 
+    title: "Broughton",
+    type: "image",
+    url: "Broughton.jpg"
+  },
+         {
+    title: "📍 Open in Google Maps",
+    type: "link",
+    url: "https://maps.app.goo.gl/kEVR1kQT5GPNn9wP7?g_st=ac"
+},  
+{
+    title: "A14 - J7 Roundabout",
+    type: "image",
+    url: "A14 - J7 Roundabout.jpg"
+  },
+           {
+    title: "📍 Open in Google Maps - A14 J7 Roundabout",
+    type: "link",
+    url: "https://maps.app.goo.gl/9wKQ6J58o76nJYnm7?g_st=ac"
+},
+  {
+    title: "A14 - J8 Roundabout",
+    type: "image",
+    url: "A14 - J8 Roundabout.jpg"
+},
+          {
+    title: "📍 Open in Google Maps - A14 J8 Roundabout",
+    type: "link",
+    url: "https://maps.app.goo.gl/5BmzidZDfRYvRkWXA?g_st=ac"
+   }
+]         
+  },
+    {
+  name: "Wellingborough – Tricky Areas",
+  videos: [{
+        title: "Wellingborough Crossroads",
+        type: "image",
+        url: "Wellingborough crossroads.jpg"
+},
+           {
+    title: "📍 Open in Google Maps - Wellingborough Crossroads",
+    type: "link",
+    url: "https://maps.app.goo.gl/Wh7v6H6Pxn51Qmon7?g_st=ac"
+},
+{
+    title: "Hardwater Crossing",
+    type: "image",
+    url: "Hardwater crossing.jpg"
+    },
+           {
+    title: "📍 Open in Google Maps - Hardwater Crossing",
+    type: "link",
+    url: "https://maps.app.goo.gl/EktaTJzKA4f2uc7P9?g_st=ac"
+      }
   {
     name: "Instructor Hub",
     icon: "👨‍🏫",
@@ -526,101 +620,7 @@ const toolkitData = [
 },
 ]
 },
-   {
-    name: "Tricky Areas",
-    icon: "📍",
-    topics: [
-        {
-            name: "Kettering – Tricky Areas",
-  videos: [{
-  title: "Double Roundabout ",
-  type: "image",
-  url: "Double RB 1.jpg"
-},
-{
-    title: "📍 Open in Google Maps",
-    type: "link",
-    url: "https://maps.app.goo.gl/XW14MzfB24HoAaiX7?g_st=ac"
-},
-  {
-  title: "Double Roundabout (3 lanes on approach)",
-  type: "image",
-  url: "Double RB 2 (3 lanes on approach).jpg"
-},
-{
-  title: "Double Roundabout ",
-  type: "image",
-  url: "Double RB 3.jpg"
-},
-{
-  title: "Double Roundabout ",
-  type: "image",
-  url: "Double RB 4.jpg"
-  },
-{
-    title: "Spiral Roundabout",
-    type: "image",
-    url: "Spiral RB.jpg"
-   },
-{
-    title: "📍 Open in Google Maps",
-    type: "link",
-    url: "https://maps.app.goo.gl/XzFByAWGJpwS8zGC6?g_st=ac"
-},
-  { 
-    title: "Broughton",
-    type: "image",
-    url: "Broughton.jpg"
-  },
-         {
-    title: "📍 Open in Google Maps",
-    type: "link",
-    url: "https://maps.app.goo.gl/kEVR1kQT5GPNn9wP7?g_st=ac"
-},  
-{
-    title: "A14 - J7 Roundabout",
-    type: "image",
-    url: "A14 - J7 Roundabout.jpg"
-  },
-           {
-    title: "📍 Open in Google Maps - A14 J7 Roundabout",
-    type: "link",
-    url: "https://maps.app.goo.gl/9wKQ6J58o76nJYnm7?g_st=ac"
-},
-  {
-    title: "A14 - J8 Roundabout",
-    type: "image",
-    url: "A14 - J8 Roundabout.jpg"
-},
-          {
-    title: "📍 Open in Google Maps - A14 J8 Roundabout",
-    type: "link",
-    url: "https://maps.app.goo.gl/5BmzidZDfRYvRkWXA?g_st=ac"
-   }
-]         
-  },
-    {
-  name: "Wellingborough – Tricky Areas",
-  videos: [{
-        title: "Wellingborough Crossroads",
-        type: "image",
-        url: "Wellingborough crossroads.jpg"
-},
-           {
-    title: "📍 Open in Google Maps - Wellingborough Crossroads",
-    type: "link",
-    url: "https://maps.app.goo.gl/Wh7v6H6Pxn51Qmon7?g_st=ac"
-},
-{
-    title: "Hardwater Crossing",
-    type: "image",
-    url: "Hardwater crossing.jpg"
-    },
-           {
-    title: "📍 Open in Google Maps - Hardwater Crossing",
-    type: "link",
-    url: "https://maps.app.goo.gl/EktaTJzKA4f2uc7P9?g_st=ac"
-      }
+  
     ]
   }
   ]
