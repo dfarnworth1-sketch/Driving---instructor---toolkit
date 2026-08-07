@@ -84,7 +84,7 @@ const toolkitData = [
         videos: [
           { title: "Observation and Planning", id: "DJcAgnBFRds" },
           { title: "Blind Spots", id: "2cr5A_R87iU" },
-    title: "How to Deal with Cyclists",
+    { title: "How to Deal with Cyclists",
     id: "UPN_XvaYU2k"
 }
         ]
