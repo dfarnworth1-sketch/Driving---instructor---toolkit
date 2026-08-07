@@ -523,7 +523,7 @@ const toolkitData = [
             url: "dl25-driving-test-report.pdf"
           }
         ]
-      }
+      },
    {
     name: "Tricky Areas",
     topics: [
