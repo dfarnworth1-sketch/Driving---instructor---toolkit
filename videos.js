@@ -342,21 +342,7 @@ const toolkitData = [
           { title: "Anxiety – Video 2", id: "0yKXFrpGAM8" },
           { title: "Anxiety – Video 3", id: "IoLPvEc-0IQ" },
           { title: "Anxiety – Video 4", id: "kFxO0fEJLmA" }
-        ]
-      },
-      {
        
-        name: "GDE Matrix",
-        videos: [
-          {
-            title: "Goals for Driver Education",
-            id: "Qck7EyKOFjw"
-    },
-    {
-      title: "GDE Matrix PDF",
-      type: "pdf",
-      url: "GDE-matrix.pdf"
-        }
         ]
       }
     ]
