@@ -50,14 +50,7 @@ const toolkitData = [
           { title: "Using the Brakes", id: "Jl9qTbZH4tM" }
         ]
       },
-      {
-        name: "Positioning",
-        videos: [ ]
-      }
-    ]
-  },
-
-  {
+     {
     name: "Basic Driving",
     icon: "🚙",
     topics: [
@@ -128,7 +121,7 @@ const toolkitData = [
         name: "Positioning",
         videos: [
           { title: "Positioning at Junctions", id: "WvDiRRjKWdw" },
-        ]
+        
         { title: "Road Positioning", id: "dR1ccDljtmM" },
           {
             title: "Judging Clearance from Parked Cars",
