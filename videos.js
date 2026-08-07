@@ -80,10 +80,6 @@ const toolkitData = [
         ]
       },
       {
-        name: "Signals",
-        videos: []
-      },
-      {
         name: "Observation",
         videos: [
           { title: "Blind Spots", id: "2cr5A_R87iU" }
