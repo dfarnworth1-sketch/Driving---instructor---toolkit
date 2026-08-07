@@ -80,16 +80,10 @@ const toolkitData = [
         ]
       },
       {
-        name: "Observation",
-        videos: [
-          { title: "Blind Spots", id: "2cr5A_R87iU" }
-        ]
-      },
-      {
         name: "Observation and Planning",
         videos: [
           { title: "Observation and Planning", id: "DJcAgnBFRds" },
-          {
+          { title: "Blind Spots", id: "2cr5A_R87iU" },
     title: "How to Deal with Cyclists",
     id: "UPN_XvaYU2k"
 }
