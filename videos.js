@@ -524,6 +524,21 @@ const toolkitData = [
           }
         ]
       }
+   {
+    name: "Tricky Areas",
+    topics: [
+        {
+            name: "Kettering",
+            videos: [
+                // Move all your Kettering photos, Google Maps links and videos here
+            ]
+        },
+        {
+            name: "Wellingborough",
+            videos: [
+                // Move all your Wellingborough items here
+            ]
+        }
     ]
   }
 ];
