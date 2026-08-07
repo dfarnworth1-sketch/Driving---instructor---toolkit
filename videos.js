@@ -400,12 +400,6 @@ const toolkitData = [
         ]
       },
       {
-        name: "Neurodiversity",
-        videos: [
-          { title: "ADHD", id: "aLWFvLZbJEI" }
-        ]
-      },
-      {
         name: "Learning and Coaching",
         videos: [
           {
