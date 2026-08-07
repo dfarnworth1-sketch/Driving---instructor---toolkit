@@ -386,25 +386,16 @@ const toolkitData = [
     ]
   },
  { 
-     name: "Driving Test",
+     name: "Goals for Driver Education",
     icon: "📋",
     topics: [
       {
-        name: "Show Me, Tell Me",
+        name: "GDE Matrix",
         videos: [
       {
-        title: "Show Me, Tell Me" ,
-        id: "uh8slnP76-w"
-          }
-        ]
-      },
-     { 
-        name: "Independent Driving",
-        videos: [
-          {
-            title: "Using a Sat Nav on the Driving Test",
-            id: "SaapXrhuEp8"
-  
+        title: "GDE Matrix PDF",
+      type: "pdf",
+      url: "GDE-matrix.pdf"
     }
   ]
 },
