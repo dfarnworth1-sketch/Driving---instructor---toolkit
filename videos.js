@@ -380,7 +380,15 @@ const toolkitData = [
           {
             title: "Using a Sat Nav on the Driving Test",
             id: "SaapXrhuEp8"
-   
+    }
+        ]
+      },
+     { 
+        name: "Independent Driving",
+        videos: [
+          {
+            title: "Using a Sat Nav on the Driving Test",
+            id: "SaapXrhuEp8"
     }
   ]
 },
