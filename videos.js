@@ -186,10 +186,6 @@ const toolkitData = [
       {
         name: "Dual Carriageways",
         videos: []
-      },
-      {
-        name: "Motorways",
-        videos: []
       }
     ]
   },
