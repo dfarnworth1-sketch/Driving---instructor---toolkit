@@ -50,6 +50,8 @@ const toolkitData = [
           { title: "Using the Brakes", id: "Jl9qTbZH4tM" }
         ]
       },
+     ]
+     }, 
      {
     name: "Basic Driving",
     icon: "🚙",
@@ -131,7 +133,8 @@ const toolkitData = [
       
     ]
   },
-
+]
+  },     
   {
     name: "Roundabouts",
     icon: "🔄",
