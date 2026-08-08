@@ -500,10 +500,8 @@
 
       const category = toolkitData[categoryIndex];
 
-      document.getElementById(
-        "category-heading"
-      ).textContent =
-        category.icon + " " + category.name;
+     document.getElementById("category-heading").innerHTML =
+  category.icon + " " + category.name;
 
       const topicGrid =
         document.getElementById("topic-grid");
