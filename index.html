@@ -190,6 +190,51 @@
       }
     }
 
+
+    /* ===== NUMBER 3: SPACING, CORNERS & SHADOWS ===== */
+
+    .category-grid {
+      gap: 20px;
+    }
+
+    .category-card {
+      min-height: 145px;
+      padding: 26px 22px;
+      border-radius: 18px;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.18);
+    }
+
+    .category-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.22);
+    }
+
+    .category-card:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 12px rgba(15, 23, 42, 0.16);
+    }
+
+    .category-card .category-icon {
+      margin-bottom: 2px;
+    }
+
+    .category-card .category-name {
+      max-width: 220px;
+      line-height: 1.18;
+    }
+
+    @media (max-width: 600px) {
+      .category-grid {
+        gap: 14px;
+      }
+
+      .category-card {
+        min-height: 116px;
+        padding: 22px 18px;
+        border-radius: 16px;
+      }
+    }
+
     /* ===== END APPEARANCE UPDATE ===== */
 
     * {
