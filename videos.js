@@ -373,15 +373,19 @@ const toolkitData = [
   },
  {
   name: "GDE Matrix",
-  videos: [
+  icon: "📋",
+  topics: [
     {
-      title: "GDE Matrix",
-      type: "image",
-      url: "gde-matrix.jpg"
-    },
-    {
-      title: "GDE Matrix Explained",
-      id: "Qck7EyKOFjw"
+      name: "GDE Matrix",
+      videos: [
+        {
+          title: "GDE Matrix",
+          type: "image",
+          url: "gde-matrix.jpg"
+        },
+        {
+          title: "GDE Matrix Explained",
+          id: "Qck7EyKOFjw"
     }
   ]
 }
