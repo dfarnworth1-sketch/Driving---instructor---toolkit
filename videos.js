@@ -41,7 +41,7 @@ const toolkitData = [
     title: "Ultimate Guide to Steering",
     id: "VxtyM11NJlc"
 },
-          { title: "Steering", id: "R8zhtcN_4u4" }
+          { title: "How to Steer", id: "R8zhtcN_4u4" }
         ]
       },
       {
@@ -60,7 +60,7 @@ const toolkitData = [
   type: "image",
   url: "Braking.jpg"
 },
-          { title: "Using the Brakes", id: "Jl9qTbZH4tM" }
+          { title: "Clutch or Brake First", id: "Jl9qTbZH4tM" }
         ]
       },
      ]
@@ -81,7 +81,7 @@ const toolkitData = [
             id: "dze2UWGT11k"
           },
           {
-            title: "Moving Off and Stopping – Video 3",
+            title: "Stoppin Close",
             id: "VNYlSPYJTjM"
           }
         ]
@@ -92,7 +92,7 @@ const toolkitData = [
           { title: "Mirrors and the MSM Routine", id: "esPeCo8aT7s" },
           { title: "Adjusting the Mirrors", id: "MI_p031-q60" },
           { title: "Using Mirrors When Reversing", id: "w7m0DuL6REw" },
-          { title: "Mirrors – Video 4", id: "obwdyqW1ars" }
+          { title: "Mirrors", id: "obwdyqW1ars" }
         ]
       },
       {
