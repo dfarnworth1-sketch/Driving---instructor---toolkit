@@ -27,10 +27,10 @@ const toolkitData = [
       {
         name: "Gears",
         videos: [{ title: "Ultimate Guide to Gears", id: "w8RfEyt7Stk"},
-                 { title: "Gear and Steer", id: "mOr5Gqx6ZoM" }
+                 { title: "Gear and Steer", id: "mOr5Gqx6ZoM" },
                  { title: "Why Does My Car Jerk When Changing Gear?", id: "Ifn0OI3v7lc" },
           { title: "Using the Gears", id: "A4rs09AKBc8" },
-          { title: "Tips For Smoother Gear Changing", id: "oM25BCDVHSw" },
+          { title: "Tips For Smoother Gear Changing", id: "oM25BCDVHSw" }
           
           
         ]
