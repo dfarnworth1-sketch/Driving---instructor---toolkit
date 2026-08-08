@@ -656,8 +656,8 @@ else {
 
         button.className = "category-card";
 
-        button.textContent =
-          category.icon + " " + category.name;
+        button.innerHTML =
+  category.icon + " " + category.name;
 
         button.onclick = function () {
           showCategory(index);
