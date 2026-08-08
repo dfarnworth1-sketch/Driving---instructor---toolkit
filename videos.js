@@ -381,7 +381,7 @@ const toolkitData = [
         {
           title: "GDE Matrix",
           type: "image",
-          url: "gde-matrix.jpg"
+          url: "GDE Matrix.jpg"
         },
         {
           title: "GDE Matrix Explained",
