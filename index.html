@@ -160,8 +160,38 @@
       }
     }
 
+    /* ===== CATEGORY CARD ICON LAYOUT ===== */
+    .category-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-align: center;
+    }
+
+    .category-card .category-icon {
+      display: block;
+      line-height: 1;
+    }
+
+    .category-card .category-icon i {
+      font-size: 42px;
+    }
+
+    .category-card .category-name {
+      display: block;
+      line-height: 1.2;
+    }
+
+    @media (max-width: 600px) {
+      .category-card .category-icon i {
+        font-size: 36px;
+      }
+    }
+
     /* ===== END APPEARANCE UPDATE ===== */
-  <style>
+
     * {
       box-sizing: border-box;
     }
@@ -384,7 +414,6 @@
       }
     }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -657,7 +686,8 @@ else {
         button.className = "category-card";
 
         button.innerHTML =
-  category.icon + " " + category.name;
+          '<span class="category-icon">' + category.icon + '</span>' +
+          '<span class="category-name">' + category.name + '</span>';
 
         button.onclick = function () {
           showCategory(index);
