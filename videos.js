@@ -26,7 +26,7 @@ const toolkitData = [
       },
       {
         name: "Gears",
-        videos: [
+        videos: [{ title: "Ultimate Guide to Gears", id: "w8RfEyt7Stk"},
           { title: "Using the Gears", id: "A4rs09AKBc8" },
           { title: "Gears – Video 2", id: "oM25BCDVHSw" },
           { title: "Gears – Video 3", id: "Ifn0OI3v7lc" },
