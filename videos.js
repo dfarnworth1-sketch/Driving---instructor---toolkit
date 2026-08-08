@@ -41,7 +41,10 @@ const toolkitData = [
       },
       {
         name: "Signals",
-        videos: [
+        videos: [{
+  title: "Ultimate Guide to Signals",
+  id: "fIuVFr6FuSQ"
+}
         ]
       },
       { 
