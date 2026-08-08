@@ -35,7 +35,10 @@ const toolkitData = [
       },
       {
         name: "Steering",
-        videos: [
+        videos: [{
+    title: "Ultimate Guide to Steering",
+    id: "VxtyM11NJlc"
+},
           { title: "Steering", id: "R8zhtcN_4u4" }
         ]
       },
