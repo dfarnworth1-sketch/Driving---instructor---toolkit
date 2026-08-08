@@ -1127,7 +1127,11 @@
           '<span class="category-name">' + category.name + '</span>';
 
         button.onclick = function () {
-          showCategory(index);
+          if (category.directOpen && category.topics && category.topics.length === 1) {
+            showTopic(index, 0);
+          } else {
+            showCategory(index);
+          }
         };
 
         categoryGrid.appendChild(button);
