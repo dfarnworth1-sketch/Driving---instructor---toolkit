@@ -272,7 +272,7 @@ const toolkitData = [
   },
  {
     name: "Tricky Areas",
-    icon: "📍",
+   icon: '<i class="fa-solid fa-location-dot"></i>',
     topics: [
         {
             name: "Kettering – Tricky Areas",
