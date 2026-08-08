@@ -7,8 +7,8 @@ const toolkitData = [
       {
         name: "Cockpit Drill",
         videos: [
-          { title: "Cockpit Drill – Video 1", id: "06oNy6OPR-U" },
-          { title: "Cockpit Drill – Video 2", id: "VK2bEC1eqBc" }
+          { title: "Ultimate Guide to Cockpit Drill", id: "06oNy6OPR-U" },
+          { title: "Tips For Best Seating Postion", id: "VK2bEC1eqBc" }
         ]
       },
       {
