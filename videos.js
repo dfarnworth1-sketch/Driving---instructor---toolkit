@@ -17,11 +17,11 @@ const toolkitData = [
           { title: "Manual Clutch Working", id: "lqo0_StXf4M" },
           {title: "Understanding the Clutch", id: "devo3kdSPQY"},
           { title: "Clutch Operation", id: "ErCw1FfLPf4" },
-          { title: "Clutch Demonstration", id: "k1SBFfMbksI" },
-          { title: "Clutch – Video 4", id: "kLGpfdRFxxU" },
-          { title: "Clutch – Video 5", id: "09DJbS1ntkQ" },
-          { title: "Clutch – Video 6", id: "AHna4amcsnE" },
-          { title: "Clutch – Video 7", id: "khvrc5NOQGo" }
+          { title: "Clutch Control - Different Techniques with Advantages and Disadvantages", id: "k1SBFfMbksI" },
+          { title: "When To Press The Clutch Down In A Manual Car", id: "kLGpfdRFxxU" },
+          { title: "Clutch Down Jerk? How To Make It Smooth", id: "09DJbS1ntkQ" },
+          { title: "How Long Should You Hold The Clutch At The Bite Point In A Manual Car", id: "AHna4amcsnE" },
+          { title: "Important For Mastering Clutch Control - Heel Position", id: "khvrc5NOQGo" }
         ]
       },
       {
