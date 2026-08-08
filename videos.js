@@ -375,13 +375,14 @@ const toolkitData = [
      name: "Goals for Driver Education",
     icon: "📋",
     topics: [
-      {
-        name: "GDE Matrix",
-        videos: [
+     
       {
         title: "GDE Matrix image",
       type: "image",
       url: "GDE Matrix.jpg"
+         {
+        name: "GDE Matrix",
+        videos: [
     }
   ]
 },
