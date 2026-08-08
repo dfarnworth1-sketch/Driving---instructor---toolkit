@@ -371,18 +371,17 @@ const toolkitData = [
       }
     ]
   },
- { 
-     name: "Goals for Driver Education",
-    icon: "📋",
-    topics: [
-      {
-        name: "GDE Matrix",
-        videos: [
-      {
-        title: "GDE Matrix image",
+ {
+  name: "GDE Matrix",
+  videos: [
+    {
+      title: "GDE Matrix",
       type: "image",
-      url: "GDE Matrix.jpg"
-        
+      url: "gde-matrix.jpg"
+    },
+    {
+      title: "GDE Matrix Explained",
+      id: "Qck7EyKOFjw"
     }
   ]
 },
