@@ -379,9 +379,9 @@ const toolkitData = [
         name: "GDE Matrix",
         videos: [
       {
-        title: "GDE Matrix PDF",
-      type: "pdf",
-      url: "GDE-matrix.pdf"
+        title: "GDE Matrix image",
+      type: "image",
+      url: "GDE-matrix.jpg"
     }
   ]
 },
